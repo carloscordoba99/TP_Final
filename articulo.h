@@ -22,14 +22,14 @@ public:
        void set_precio(float p){precio=p;}
        void set_stock(int s){stock=s;}
        void set_activo(bool a){activo=a;}
-       void set_nombre(const char *n){strcpy(nombre,n;}
+       void set_nombre(const char *n){strcpy(nombre,n);}
        bool Grabar_en_disco();
        bool leer_de_disco(int );
 };
 
 //****************
 //desarrollo de los metodos
-Articulo::Articulo( int n="0",const char *c="0", float p=0.0, int s=0,bool b=true)
+Articulo::Articulo( int n=0,const char *c="0", float p=0.0, int s=0,bool b=true)
   {
     nroart=n;
     strcpy(nombre,c);
